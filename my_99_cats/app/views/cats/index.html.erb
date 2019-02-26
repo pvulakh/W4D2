@@ -1,0 +1,25 @@
+<h1>These are all the cats!</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="4">Cats</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Name</td>
+            <td>Age</td>
+            <td>Color</td>
+            <td>Sex</td>
+        </tr>
+        <% @cats.each do |cat| %>
+            <tr>
+                <td><%= cat.name%></td>
+                <td><%= cat.age%></td>
+                <td><%= cat.color%></td>
+                <td><%= cat.sex%></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
